@@ -34,10 +34,7 @@ function addItem(){
 }
 function removeItem(){
     li = ul.children
-    console.log(li);
     for (let index = 0; index < li.length; index++) {
-        // const element = li[index];
-        // console.log(element);
         while(li[index] && li[index].children[0].checked){
             ul.removeChild(li[index])
         }
